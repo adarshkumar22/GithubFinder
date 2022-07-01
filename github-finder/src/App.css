@@ -2,7 +2,7 @@
 
 /* Global Styles */
 :root {
-  --primary-color: #dc3545;
+  --primary-color: #0d6efd;
   --dark-color: #333333;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
@@ -70,6 +70,7 @@ img {
   text-align: center;
 }
 
+
 .text-primary {
   color: var(--primary-color);
 }
@@ -84,10 +85,6 @@ img {
 
 .text-danger {
   color: var(--danger-color);
-}
-
-.text-center {
-  text-align: center;
 }
 
 .text-right {
@@ -111,9 +108,11 @@ img {
 
 /* Cards */
 .card {
-  padding: 1rem;
+  padding: 0.8rem;
   border: #ccc 1px dotted;
   margin: 0.7rem 0;
+  border-radius: 5px;
+  font-size: 0.8rem !important;
 }
 
 /* List */
@@ -227,14 +226,14 @@ img {
 }
 
 .badge {
-  display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0.2rem 0.7rem;
   text-align: center;
   margin: 0.3rem;
   background: var(--light-color);
   color: #333;
   border-radius: 5px;
+  width: 20vw;
 }
 
 .alert {
@@ -246,7 +245,7 @@ img {
 }
 
 .btn-primary,
-.bg-primary,
+/* .bg-primary, */
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);

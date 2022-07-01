@@ -38,12 +38,12 @@ const User = ({ match }) => {
       <Link to='/' className='btn btn-light'>
         Back To Search
       </Link>
-      Hireable:{' '}
-      {hireable ? (
+      {/* Hireable:{' '} */}
+      {/* {hireable ? (
         <i className='fas fa-check text-success' />
       ) : (
         <i className='fas fa-times-circle text-danger' />
-      )}
+      )} */}
       <div className='card grid-2'>
         <div className='all-center'>
           <img
@@ -93,11 +93,15 @@ const User = ({ match }) => {
         </div>
       </div>
       <div className='card text-center'>
-        <div className='badge badge-primary'>Followers: {followers}</div>
-        <div className='badge badge-success'>Following: {following}</div>
-        <div className='badge badge-light'>Public Repos: {public_repos}</div>
-        <div className='badge badge-dark'>Public Gists: {public_gists}</div>
+      <div>
+      <span className='badge badge-primary'>Followers: {followers}</span>
+        <span className='badge badge-success'>Following: {following}</span>
+        <span className='badge badge-light'>Public Repos: {public_repos}</span>
+        <span className='badge badge-dark'>Public Gists: {public_gists}</span>
       </div>
+        
+      </div>
+      <h2>Repositories</h2>
       <Repos repos={repos} />
     </Fragment>
   );
